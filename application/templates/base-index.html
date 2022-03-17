@@ -19,16 +19,18 @@
     </style>
 </head>
 <body>
+    
     <form style="margin: auto; width: 220px;" mclass="form-inline" action="{{ url_for('processing') }}">
     <div class="form-group">
         <div class="input-group">
             <span class="input-group-addon">Please select</span>
-            <select name="data" method="GET" action="/">
+            <input list="datasets" name="data" method="GET" action="/"/>
+            <datalist id="datasets">
             <option value="{{data[0]}}" >{{data[0]}}</option>
                 {% for item in data[1:] %}
                 <option value="{{item}}">{{item}}</option>
                 {% endfor %}
-            </select>   
+            </datalist>
         </div>
         <button type="submit" class="btn btn-default">Analyze!</button>
     </div>

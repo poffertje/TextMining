@@ -29,7 +29,6 @@ def processing():
     file = find_all(str(selected),directory)[0]
     dataframe = pd.read_csv(file)[:10]
     dataset = dataframe.to_html()
-    print(type(dataset))
     return render_template('base-index.html',table=dataset,data=options)
 
 def open_browser():
