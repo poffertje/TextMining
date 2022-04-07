@@ -10,8 +10,11 @@ app = Flask(__name__)
 
 directory = "datasets\default_places"
 options = []
+mapping = {}
 for filename in os.listdir(directory):
-    options.append(filename)
+    name_stripped = filename.split(".")[0].replace("_"," ").capitalize()
+    mapping[name_stripped] = filename
+    options.append(name_stripped)
 
 def find_all(name, path):
     result = []
@@ -27,8 +30,9 @@ def index():
 @app.route("/processing" , methods=['GET', 'POST'])
 def processing():
     selected = request.args.get('data')
-    file = find_all(str(selected),directory)[0]
-    dataset = pipeline_model.present(file)
+    chosen = mapping.get(selected)
+    file = find_all(str(chosen),directory)[0]
+    dataset = pipeline_model.present(file) # this would 
     return render_template('base-index.html',table=dataset,data=options)
 
 def open_browser():
