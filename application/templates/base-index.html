@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>{% block title %} {% endblock %} Review Analyzer</title>
     <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
         .message {
             padding: 10px;
             margin: 5px;
@@ -15,8 +18,32 @@
             margin-left: 50px;
             text-decoration: none;
         }
-
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }     
+        .invalid {
+            color: #d64161;
+        }   
     </style>
+
+    <script>
+    function validateForm() {
+      var x = document.forms["myForm"]["fname"].value;
+      if (x == "" || x == null) {
+        alert("Name must be filled out");
+        return false;
+      }
+    }
+    </script>
 </head>
 <body>
     
@@ -24,7 +51,7 @@
     <div class="form-group">
         <div class="input-group">
             <span class="input-group-addon">Please select</span>
-            <input list="datasets" name="data" method="GET" action="/"/>
+            <input required list="datasets" name="data" method="GET" action="/"/>
             <datalist id="datasets">
             <option value="{{data[0]}}" >{{data[0]}}</option>
                 {% for item in data[1:] %}
@@ -32,7 +59,12 @@
                 {% endfor %}
             </datalist>
         </div>
-        <button type="submit" class="btn btn-default">Analyze!</button>
+        <div class="invalid">      
+            {% if invalid %}
+                {{invalid | safe}}
+            {% endif %}
+        </div>
+        <button class="button" type="submit" class="btn btn-default">Analyze!</button>
     </div>
     </form>
     <div>      

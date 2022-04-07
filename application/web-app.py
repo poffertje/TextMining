@@ -31,7 +31,10 @@ def index():
 def processing():
     selected = request.args.get('data')
     chosen = mapping.get(selected)
-    file = find_all(str(chosen),directory)[0]
+    try:
+        file = find_all(str(chosen),directory)[0]
+    except:
+       return render_template('base-index.html',invalid="Requested location not present",data=options)
     dataset = pipeline_model.present(file) # this would 
     return render_template('base-index.html',table=dataset,data=options)
 
