@@ -32,7 +32,9 @@ pip install -r requirements.txt
 |   |   ├── 
 |   |   ├── 
 |   ├── preprocessing.ipynb        
-├── data/                               
+├── datasets/
+|   ├── YelpZip/
+|   |   ├── YelpZip.zip
 ├── report/
 |   ├── report.pdf
 ├── chromedriver.exe
