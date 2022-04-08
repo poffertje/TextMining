@@ -21,7 +21,7 @@ conda install -r requirements.txt
 |   |   ├── 
 |   |   └──  
 ├── code/
-|   ├── fale_classifier/  
+|   ├── fake_classifier/  
 |   |   ├──   
 |   |   ├── 
 |   |   ├──
