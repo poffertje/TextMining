@@ -34,7 +34,11 @@ conda install -r requirements.txt
 |   ├── preprocessing.ipynb        
 ├── datasets/
 |   ├── YelpZip/
-|   |   ├── YelpZip.zip
+|   |   ├── YelpZip.zip            <-- supported using git LFS for convinience of the reader
+|   ├── production_set.csv
+|   ├── sample_production_set.csv
+|   ├── sentiment_sample_25_75.csv <-- not included because can be obtained from preprocessing notebook (too large to push)
+|   ├── sentiment_sample_50_50.csv <-- not included because can be obtained from preprocessing notebook (too large to push)
 ├── report/
 |   ├── report.pdf
 ├── chromedriver.exe
