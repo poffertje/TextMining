@@ -4,9 +4,9 @@ Repository for the Text Mining course at VU Amsterdam 2022
 
 ### Environment Setup
 ```
-conda create -n ais python=3.7
-conda activate ais
-pip install -r requirements.txt
+conda create -n text_mining python=3.7.7
+activate text_mining
+conda install -r requirements.txt
 ```
 
 ### How to run 
@@ -21,18 +21,20 @@ pip install -r requirements.txt
 |   |   ├── 
 |   |   └──  
 ├── code/
+|   ├── fake_classifier/  
+|   |   ├──   
+|   |   ├── 
+|   |   ├──
+|   ├── sentiment_analysis/        
+|   |   ├── BERT.ipynb
+|   |   ├──
 |   ├── topic_modelling/
 |   |   ├── BERTopic.ipynb
 |   |   ├── LDA.ipynb
-|   ├── sentiment_analysis/        
-|   |   ├── BERT.ipynb
-|   |   ├── 
-|   ├── fale_classifier/  
-|   |   ├──   
-|   |   ├── 
-|   |   ├── 
 |   ├── preprocessing.ipynb        
-├── data/                               
+├── datasets/
+|   ├── YelpZip/
+|   |   ├── YelpZip.zip
 ├── report/
 |   ├── report.pdf
 ├── chromedriver.exe
