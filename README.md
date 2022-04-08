@@ -15,6 +15,11 @@ pip install -r requirements.txt
 ### Structure
 ```
 .
+├── application/
+|   ├── scraping/
+|   |   ├── 
+|   |   ├── 
+|   |   └──  
 ├── code/
 |   ├── topic_modelling/
 |   |   ├── BERTopic.ipynb
@@ -26,15 +31,10 @@ pip install -r requirements.txt
 |   |   ├──   
 |   |   ├── 
 |   |   ├── 
-|   ├── preprocessing/          
-|   |   └── preprocessing.ipynb
-├── application/
-|   ├── scraping/
-|   |   ├── 
-|   |   ├── 
-|   |   └──  
+|   ├── preprocessing.ipynb        
 ├── data/                               
-├── docs/
+├── report/
+|   ├── report.pdf
 ├── chromedriver.exe
 ├── README.md
 └── requirements.txt
