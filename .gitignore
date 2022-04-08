@@ -1,6 +1,2 @@
-
-datasets/.ipynb_checkpoints/
-
-code/.ipynb_checkpoints/
-
-code/topic_modelling/.ipynb_checkpoints/
+*.zip
+.ipynb_checkpoints
