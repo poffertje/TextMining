@@ -6,7 +6,7 @@ Repository for the Text Mining course at VU Amsterdam 2022
 ```
 conda create -n text_mining python=3.7.7
 activate text_mining
-conda install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 ### How to run 
