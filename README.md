@@ -1,27 +1,41 @@
-TextMining
+# Yelp Reviews
 
+Repository for the Text Mining course at VU Amsterdam 2022
+
+### Environment Setup
+```
+conda create -n ais python=3.7
+conda activate ais
+pip install -r requirements.txt
+```
+
+### How to run 
+
+
+### Structure
+```
 .
 ├── code/
-|   ├── model/
-|   |   ├── sentiment_analysis/         <- models for sentiment analysis (vader, textblob and flair)
-|   |   |   ├── flair_model.py
-|   |   |   ├── textblob.py
-|   |   |   └── vader.py
-|   |   ├── topic_modelling/            <- models for topic modelling (BERT-based and LDA)
-|   |   |   ├── bertopic.py
-|   |   |   └── LDA.ipynb
-|   |   └── __init__.py
+|   ├── topic_modelling/
+|   |   ├── BERTopic.ipynb
+|   |   ├── LDA.ipynb
+|   ├── sentiment_analysis/        
+|   |   ├── BERT.ipynb
+|   |   ├── 
+|   ├── fale_classifier/  
+|   |   ├──   
+|   |   ├── 
+|   |   ├── 
 |   ├── preprocessing/          
-|   |   ├── __init__.py
-|   |   └── preprocessing.py
+|   |   └── preprocessing.ipynb
+├── application/
 |   ├── scraping/
-|   |   ├── __init__.py
-|   |   ├── skytrax_scraping.py
-|   |   └── tripadvisor_scraping.py     
-|   ├── main.py
-|   └── postprocessing.ipynb
+|   |   ├── 
+|   |   ├── 
+|   |   └──  
 ├── data/                               
 ├── docs/
 ├── chromedriver.exe
 ├── README.md
 └── requirements.txt
+```
