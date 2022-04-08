@@ -21,16 +21,16 @@ pip install -r requirements.txt
 |   |   ├── 
 |   |   └──  
 ├── code/
-|   ├── topic_modelling/
-|   |   ├── BERTopic.ipynb
-|   |   ├── LDA.ipynb
-|   ├── sentiment_analysis/        
-|   |   ├── BERT.ipynb
-|   |   ├── 
 |   ├── fale_classifier/  
 |   |   ├──   
 |   |   ├── 
-|   |   ├── 
+|   |   ├──
+|   ├── sentiment_analysis/        
+|   |   ├── BERT.ipynb
+|   |   ├──
+|   ├── topic_modelling/
+|   |   ├── BERTopic.ipynb
+|   |   ├── LDA.ipynb
 |   ├── preprocessing.ipynb        
 ├── datasets/
 |   ├── YelpZip/
