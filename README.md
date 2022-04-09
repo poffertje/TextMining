@@ -27,7 +27,6 @@ pip install -r requirements.txt
 |   |   ├──
 |   ├── sentiment_analysis/        
 |   |   ├── BERT.ipynb
-|   |   ├──
 |   ├── topic_modelling/
 |   |   ├── BERTopic.ipynb
 |   |   ├── LDA.ipynb
