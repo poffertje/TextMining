@@ -28,7 +28,9 @@ pip install -r requirements.txt
 |   ├── topic_modelling/
 |   |   ├── BERTopic.ipynb
 |   |   ├── LDA.ipynb
-|   ├── preprocessing.ipynb        
+|   ├── preprocessing.ipynb
+├── models/
+|   ├── models.zip                              <-- download the file from drive and unzip the file into models repository
 ├── datasets/
 |   ├── YelpZip/
 |   |   ├── YelpZip.zip                         <-- unzip the file into the existing folder (supported using git LFS)
