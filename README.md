@@ -22,9 +22,8 @@ pip install -r requirements.txt
 |   |   └──  
 ├── code/
 |   ├── fake_classifier/  
-|   |   ├──   
-|   |   ├── 
-|   |   ├──
+|   |   ├── FeatureEngineering.ipynb
+|   |   ├── LogisticRegression.ipynb
 |   ├── sentiment_analysis/        
 |   |   ├── BERT.ipynb
 |   ├── topic_modelling/
