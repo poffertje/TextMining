@@ -16,16 +16,15 @@ pip install -r requirements.txt
 ```
 .
 ├── application/
-|   ├── scraping/
-|   |   ├── 
-|   |   ├── 
-|   |   └──  
+|   ├── application_prototype.ipynb
 ├── code/
 |   ├── fake_classifier/  
 |   |   ├── FeatureEngineering.ipynb
 |   |   ├── LogisticRegression.ipynb
 |   ├── sentiment_analysis/        
-|   |   ├── BERT.ipynb
+|   |   ├── SIEBERT_evaluation.ipynb
+|   |   ├── FT_BERT.ipynb
+|   |   ├── FT_BERT_evaluation.ipynb
 |   ├── topic_modelling/
 |   |   ├── BERTopic.ipynb
 |   |   ├── LDA.ipynb
