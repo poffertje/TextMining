@@ -10,7 +10,7 @@ pip install -r requirements.txt
 ```
 
 ### How to run 
-
+To run the application prototype you can either run it locally by setting up the environment or by using google collab link. Either way you would need to get the models with this link https://drive.google.com/drive/folders/1GAP9tuE56pdmuJ7ckQBdOtYKpjBF0QKm?usp=sharing
 
 ### Structure
 ```
